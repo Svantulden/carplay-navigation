@@ -47,13 +47,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CPApplicationDelegate, CP
         let mapTemplate = CPMapTemplate()
         mapTemplate.mapDelegate = self
         
-        let reportButton = CPBarButton(type: .text) { (button) in
-            
+        let barButton = CPBarButton(type: .text) { (button) in
+            print("[CARPLAY] MAP TEMPLATE BARBUTTON TAPPED")
         }
         
-        reportButton.title = "Melden"
+        barButton.title = "BarButton"
         
-        mapTemplate.trailingNavigationBarButtons = [reportButton]
+        mapTemplate.trailingNavigationBarButtons = [barButton]
         
         return mapTemplate
     }
