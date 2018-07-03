@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C584EF2220EAADB000D1652C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584EF2120EAADB000D1652C /* AppDelegate.swift */; };
-		C584EF2420EAADB000D1652C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584EF2320EAADB000D1652C /* ViewController.swift */; };
 		C584EF2720EAADB000D1652C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C584EF2520EAADB000D1652C /* Main.storyboard */; };
 		C584EF2920EAADB100D1652C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584EF2820EAADB100D1652C /* Assets.xcassets */; };
 		C584EF2C20EAADB100D1652C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C584EF2A20EAADB100D1652C /* LaunchScreen.storyboard */; };
-		C584EF3820EAAF8600D1652C /* CarplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584EF3720EAAF8600D1652C /* CarplayViewController.swift */; };
 		C584EF3A20EAB22800D1652C /* CarplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C584EF3920EAB22800D1652C /* CarplayView.xib */; };
+		C591530E20EBF84900330FD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584EF2320EAADB000D1652C /* ViewController.swift */; };
+		C591530F20EBF84D00330FD8 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C591530A20EBF2AB00330FD8 /* CustomNavigationViewController.swift */; };
+		C591531020EBF84F00330FD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584EF2120EAADB000D1652C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C584EF1E20EAADB000D1652C /* CarplayNavigationTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarplayNavigationTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C584EF1E20EAADB000D1652C /* CarplayNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarplayNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C584EF2120EAADB000D1652C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C584EF2320EAADB000D1652C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C584EF2620EAADB000D1652C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C584EF2820EAADB100D1652C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C584EF2B20EAADB100D1652C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C584EF2D20EAADB100D1652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C584EF3720EAAF8600D1652C /* CarplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarplayViewController.swift; sourceTree = "<group>"; };
 		C584EF3920EAB22800D1652C /* CarplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarplayView.xib; sourceTree = "<group>"; };
 		C584EF3B20EAB47900D1652C /* CarplayNavigationTesting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarplayNavigationTesting.entitlements; sourceTree = "<group>"; };
+		C591530A20EBF2AB00330FD8 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 		C584EF1F20EAADB000D1652C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C584EF1E20EAADB000D1652C /* CarplayNavigationTesting.app */,
+				C584EF1E20EAADB000D1652C /* CarplayNav.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,15 +60,12 @@
 		C584EF2020EAADB000D1652C /* CarplayNavigationTesting */ = {
 			isa = PBXGroup;
 			children = (
+				C591530D20EBF77800330FD8 /* Views */,
+				C591530C20EBF76D00330FD8 /* ViewControllers */,
 				C584EF3B20EAB47900D1652C /* CarplayNavigationTesting.entitlements */,
 				C584EF2120EAADB000D1652C /* AppDelegate.swift */,
-				C584EF2320EAADB000D1652C /* ViewController.swift */,
-				C584EF2520EAADB000D1652C /* Main.storyboard */,
 				C584EF2820EAADB100D1652C /* Assets.xcassets */,
-				C584EF2A20EAADB100D1652C /* LaunchScreen.storyboard */,
 				C584EF2D20EAADB100D1652C /* Info.plist */,
-				C584EF3720EAAF8600D1652C /* CarplayViewController.swift */,
-				C584EF3920EAB22800D1652C /* CarplayView.xib */,
 			);
 			path = CarplayNavigationTesting;
 			sourceTree = "<group>";
@@ -80,12 +77,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C591530C20EBF76D00330FD8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C584EF2320EAADB000D1652C /* ViewController.swift */,
+				C591530A20EBF2AB00330FD8 /* CustomNavigationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C591530D20EBF77800330FD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C584EF2520EAADB000D1652C /* Main.storyboard */,
+				C584EF2A20EAADB100D1652C /* LaunchScreen.storyboard */,
+				C584EF3920EAB22800D1652C /* CarplayView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C584EF1D20EAADB000D1652C /* CarplayNavigationTesting */ = {
+		C584EF1D20EAADB000D1652C /* CarplayNav */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C584EF3020EAADB100D1652C /* Build configuration list for PBXNativeTarget "CarplayNavigationTesting" */;
+			buildConfigurationList = C584EF3020EAADB100D1652C /* Build configuration list for PBXNativeTarget "CarplayNav" */;
 			buildPhases = (
 				C584EF1A20EAADB000D1652C /* Sources */,
 				C584EF1B20EAADB000D1652C /* Frameworks */,
@@ -95,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = CarplayNavigationTesting;
+			name = CarplayNav;
 			productName = CarplayNavigatoinTesting;
-			productReference = C584EF1E20EAADB000D1652C /* CarplayNavigationTesting.app */;
+			productReference = C584EF1E20EAADB000D1652C /* CarplayNav.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C584EF1D20EAADB000D1652C /* CarplayNavigationTesting */,
+				C584EF1D20EAADB000D1652C /* CarplayNav */,
 			);
 		};
 /* End PBXProject section */
@@ -157,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C584EF2420EAADB000D1652C /* ViewController.swift in Sources */,
-				C584EF3820EAAF8600D1652C /* CarplayViewController.swift in Sources */,
-				C584EF2220EAADB000D1652C /* AppDelegate.swift in Sources */,
+				C591531020EBF84F00330FD8 /* AppDelegate.swift in Sources */,
+				C591530E20EBF84900330FD8 /* ViewController.swift in Sources */,
+				C591530F20EBF84D00330FD8 /* CustomNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C584EF3020EAADB100D1652C /* Build configuration list for PBXNativeTarget "CarplayNavigationTesting" */ = {
+		C584EF3020EAADB100D1652C /* Build configuration list for PBXNativeTarget "CarplayNav" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C584EF3120EAADB100D1652C /* Debug */,

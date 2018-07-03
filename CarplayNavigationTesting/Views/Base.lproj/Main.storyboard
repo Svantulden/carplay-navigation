@@ -12,15 +12,15 @@
         <!--View Controller-->
         <scene sceneID="a0b-zJ-nN3">
             <objects>
-                <viewController id="Q1l-bs-3fz" customClass="ViewController" customModule="CarplayTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Q1l-bs-3fz" customClass="ViewController" customModule="CarplayNav" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BeL-LN-9LY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-Vr-fev">
-                                <rect key="frame" x="27" y="288" width="322" height="91"/>
+                                <rect key="frame" x="27" y="288" width="323" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Hello Carplay World
+                                <string key="text">Hello CarPlay World
 👋</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>

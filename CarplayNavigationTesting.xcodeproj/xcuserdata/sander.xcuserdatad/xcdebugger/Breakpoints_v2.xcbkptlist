@@ -60,13 +60,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarplayNavigationTesting/CarplayViewController.swift"
-            timestampString = "552255114.884757"
+            timestampString = "552334050.424154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "CarplayViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
