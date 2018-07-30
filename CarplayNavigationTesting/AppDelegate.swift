@@ -13,7 +13,7 @@ import CarPlay
 class AppDelegate: UIResponder, UIApplicationDelegate, CPApplicationDelegate, CPMapTemplateDelegate {
 
     // MARK: - CarPlay Reference variables
-    var carWindow: CPMapContentWindow?
+    var carWindow: CPWindow?
     var interfaceController: CPInterfaceController?
     var mapTemplate: CPMapTemplate?
     
@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CPApplicationDelegate, CP
     var window: UIWindow?
 
     // MARK: - CPApplicationDelegate methods
-    func application(_ application: UIApplication, didConnectCarInterfaceController interfaceController: CPInterfaceController, to window: CPMapContentWindow) {
+    func application(_ application: UIApplication, didConnectCarInterfaceController interfaceController: CPInterfaceController, to window: CPWindow) {
         print("[CARPLAY] CONNECTED TO CARPLAY!")
         
         // Keep references to the CPInterfaceController (handles your templates) and the CPMapContentWindow (to draw/load your own ViewController's with a navigation map onto)
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CPApplicationDelegate, CP
         // Note: Obviously the AppDelegate is a bad place to handle everything and save all your references. This is done for example, don't put everything in the same class 🙃
     }
     
-    func application(_ application: UIApplication, didDisconnectCarInterfaceController interfaceController: CPInterfaceController, from window: CPMapContentWindow) {
+    func application(_ application: UIApplication, didDisconnectCarInterfaceController interfaceController: CPInterfaceController, from window: CPWindow) {
         print("[CARPLAY] DISCONNECTED FROM CARPLAY!")
     }
     
