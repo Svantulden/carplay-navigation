@@ -10,16 +10,7 @@ import UIKit
 import CarPlay
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, CPApplicationDelegate, CPMapTemplateDelegate {
-    
-    // MARK: - CPApplicationDelegate methods
-    func application(_ application: UIApplication, didConnectCarInterfaceController interfaceController: CPInterfaceController, to window: CPWindow) {
-        CPBaseController.shared.ConnectedToCP(application, didConnectCarInterfaceController: interfaceController, to: window)
-    }
-    
-    func application(_ application: UIApplication, didDisconnectCarInterfaceController interfaceController: CPInterfaceController, from window: CPWindow) {
-        print("[CARPLAY] DISCONNECTED FROM CARPLAY!")
-    }
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Unimplemented UIApplicationDelegate delegate methods
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
