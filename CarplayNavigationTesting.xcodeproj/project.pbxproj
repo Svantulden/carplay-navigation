@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7703DE0C251E391200E77A89 /* CPbaseDeligates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703DE0B251E391200E77A89 /* CPbaseDeligates.swift */; };
 		77D675B6251A28C30085F68A /* CPBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D675B5251A28C30085F68A /* CPBaseController.swift */; };
 		77EBC222251E1E7100B5059B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EBC221251E1E7100B5059B /* SceneDelegate.swift */; };
 		C584EF2720EAADB000D1652C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C584EF2520EAADB000D1652C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7703DE0B251E391200E77A89 /* CPbaseDeligates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPbaseDeligates.swift; sourceTree = "<group>"; };
 		77D675B5251A28C30085F68A /* CPBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseController.swift; sourceTree = "<group>"; };
 		77EBC221251E1E7100B5059B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C584EF1E20EAADB000D1652C /* CarplayNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarplayNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				77EBC221251E1E7100B5059B /* SceneDelegate.swift */,
+				7703DE0B251E391200E77A89 /* CPbaseDeligates.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				C591531020EBF84F00330FD8 /* AppDelegate.swift in Sources */,
 				C591530E20EBF84900330FD8 /* ViewController.swift in Sources */,
 				C591530F20EBF84D00330FD8 /* CustomNavigationViewController.swift in Sources */,
+				7703DE0C251E391200E77A89 /* CPbaseDeligates.swift in Sources */,
 				77D675B6251A28C30085F68A /* CPBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

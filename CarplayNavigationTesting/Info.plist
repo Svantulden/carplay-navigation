@@ -35,6 +35,17 @@
                     <string>Main</string>
 				</dict>
 			</array>
+            <key>CPTemplateApplicationSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneClassName</key>
+                    <string>CPTemplateApplicationScene</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>TemplateSceneConfiguration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
+                </dict>
+            </array>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>

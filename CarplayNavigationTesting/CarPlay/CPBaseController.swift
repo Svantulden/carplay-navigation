@@ -11,40 +11,43 @@ import CarPlay
 import MapKit
 
 @available(iOS 13.4, *)
-class CPBaseController {
+class CPBaseController: NSObject, CPInterfaceControllerDelegate, CPMapTemplateDelegate {
     
     static let shared = CPBaseController()
     
+    private var carplayInterfaceController: CPInterfaceController?
+    private var carWindow: UIWindow?
+    
     public var interfaceController: CPInterfaceController?
-    public var carWindow: CPWindow?
     public var mapTemplate: CPMapTemplate?
     
-    init() {
-        
+    override init() {
+        super.init()
     }
     
-    func ConnectedToCP(_ application: UIApplication, didConnectCarInterfaceController interfaceController: CPInterfaceController, to window: CPWindow){
-        print("[CARPLAY] CONNECTED TO CARPLAY!")
-        
-        // Keep references to the CPInterfaceController (handles your templates) and the CPMapContentWindow (to draw/load your own ViewController's with a navigation map onto)
-        self.interfaceController = interfaceController
-        self.carWindow = window
-        
-        print("[CARPLAY] CREATING CPMapTemplate...")
-        
-        // Create a map template and set it as the root on the interfacecontroller (you may push/pop templates like a UINavigationController) Also assign delegate for the callbacks
+    func interfaceController(_ interfaceController: CPInterfaceController, didConnectWith window: CPWindow) {
+        print("Connected to CarPlay window.")
+        interfaceController.delegate = self
+        carplayInterfaceController = interfaceController
+//        mapViewController.cpWindow = window
+//        window.rootViewController = mapViewController
+
+        carWindow = window
+
+        /// - Tag: did_connect
         let mapTemplate = createTemplate()
-//        mapTemplate.mapDelegate = self
-        
-        self.mapTemplate = mapTemplate
-        
-        print("[CARPLAY] SETTING ROOT OBJECT OF INTERFACECONTROLLER TO MAP TEMPLATE...")
-        interfaceController.setRootTemplate(mapTemplate, animated: true)
-        
-//        print("[CARPLAY] SETTING CustomNavigationViewController as root VC...")
-//        window.rootViewController = CustomNavigationViewController()
-        
-        // Note: Obviously the AppDelegate is a bad place to handle everything and save all your references. This is done for example, don't put everything in the same class 🙃
+
+        mapTemplate.mapDelegate = self
+
+//        installBarButtons()
+
+//        interfaceController.setRootTemplate(mapTemplate, animated: true)
+    }
+    
+    func interfaceController(_ interfaceController: CPInterfaceController, didDisconnectWith window: CPWindow) {
+        print("Disconnected from CarPlay window.")
+        carplayInterfaceController = nil
+        carWindow?.isHidden = true
     }
     
     private func createTemplate() -> CPMapTemplate {
