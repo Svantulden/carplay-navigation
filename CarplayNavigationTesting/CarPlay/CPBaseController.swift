@@ -21,6 +21,8 @@ class CPBaseController: NSObject, CPInterfaceControllerDelegate, CPMapTemplateDe
     public var interfaceController: CPInterfaceController?
     public var mapTemplate: CPMapTemplate?
     
+    public var mapViewController: MapViewController?
+    
     override init() {
         super.init()
     }
@@ -29,26 +31,50 @@ class CPBaseController: NSObject, CPInterfaceControllerDelegate, CPMapTemplateDe
         print("Connected to CarPlay window.")
         interfaceController.delegate = self
         carplayInterfaceController = interfaceController
-        window.rootViewController = MapViewController()
-//        mapViewController.cpWindow = window
-//        window.rootViewController = mapViewController
-
+        let mapviewcontroller = MapViewController()
+        mapViewController = mapviewcontroller
+        window.rootViewController = mapviewcontroller
         carWindow = window
 
-        /// - Tag: did_connect
         let mapTemplate = createTemplate()
 
         mapTemplate.mapDelegate = self
 
 //        installBarButtons()
-
 //        interfaceController.setRootTemplate(mapTemplate, animated: true)
+        
     }
     
     func interfaceController(_ interfaceController: CPInterfaceController, didDisconnectWith window: CPWindow) {
         print("Disconnected from CarPlay window.")
         carplayInterfaceController = nil
         carWindow?.isHidden = true
+    }
+    
+    func dashboardController(_ dashboardController: CPDashboardController, didConnectWith window: UIWindow) {
+        print("Connected to CarPlay dashboard window.")
+        
+        let aButton = CPDashboardButton(
+            titleVariants: ["Hart"],
+            subtitleVariants: ["Broken hart"],
+            image: "💔".image() ?? UIImage()) { (button) in
+                print("Button Beaches pressed!")
+            }
+        
+        let bButton = CPDashboardButton(
+            titleVariants: ["Correct"],
+            subtitleVariants: ["Correct emoji"],
+            image:"✅".image() ?? UIImage()) { (button) in
+                print("Button Parks pressed!")
+            }
+
+        window.rootViewController = mapViewController
+        
+        dashboardController.shortcutButtons = [aButton, bButton]
+    }
+
+    func dashboardController(_ dashboardController: CPDashboardController, didDisconnectWith window: UIWindow) {
+        print("Disconnected from CarPlay dashboard window.")
     }
     
     private func createTemplate() -> CPMapTemplate {

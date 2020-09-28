@@ -24,6 +24,8 @@
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
+        <key>CPSupportsDashboardNavigationScene</key>
+        <true/>
 		<key>UISceneConfigurations</key>
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
@@ -42,6 +44,17 @@
                     <string>CPTemplateApplicationScene</string>
                     <key>UISceneConfigurationName</key>
                     <string>TemplateSceneConfiguration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
+                </dict>
+            </array>
+            <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneClassName</key>
+                    <string>CPTemplateApplicationDashboardScene</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>DashboardSceneConfiguration</string>
                     <key>UISceneDelegateClassName</key>
                     <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
                 </dict>

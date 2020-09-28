@@ -59,3 +59,39 @@ extension TemplateApplicationSceneDelegate: CPTemplateApplicationSceneDelegate {
         print("Disconnected from CarPlay.")
     }
 }
+
+extension TemplateApplicationSceneDelegate: CPTemplateApplicationDashboardSceneDelegate {
+    // MARK: CPTemplateApplicationDashboardSceneDelegate
+    
+    func templateApplicationDashboardScene(
+        _ templateApplicationDashboardScene: CPTemplateApplicationDashboardScene,
+        didConnect dashboardController: CPDashboardController,
+        to window: UIWindow) {
+        print("Connected to CarPlay dashboard.")
+        CPBaseController.shared.dashboardController(dashboardController, didConnectWith: window)
+    }
+    
+    func templateApplicationDashboardScene(
+        _ templateApplicationDashboardScene: CPTemplateApplicationDashboardScene,
+        didDisconnect dashboardController: CPDashboardController,
+        from window: UIWindow) {
+        CPBaseController.shared.dashboardController(dashboardController, didDisconnectWith: window)
+        print("Disconnected from CarPlay dashboard.")
+    }
+    
+}
+
+
+extension String {
+    func image() -> UIImage? {
+        let size = CGSize(width: 40, height: 40)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        UIColor.white.set()
+        let rect = CGRect(origin: .zero, size: size)
+        UIRectFill(CGRect(origin: .zero, size: size))
+        (self as AnyObject).draw(in: rect, withAttributes: [.font: UIFont.systemFont(ofSize: 40)])
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
