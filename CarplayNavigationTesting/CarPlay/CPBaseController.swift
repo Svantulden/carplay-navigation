@@ -29,6 +29,7 @@ class CPBaseController: NSObject, CPInterfaceControllerDelegate, CPMapTemplateDe
         print("Connected to CarPlay window.")
         interfaceController.delegate = self
         carplayInterfaceController = interfaceController
+        window.rootViewController = MapViewController()
 //        mapViewController.cpWindow = window
 //        window.rootViewController = mapViewController
 

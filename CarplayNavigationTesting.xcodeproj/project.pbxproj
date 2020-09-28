@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7703DE0C251E391200E77A89 /* CPbaseDeligates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703DE0B251E391200E77A89 /* CPbaseDeligates.swift */; };
+		7753BD752521E227007B3044 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753BD732521E227007B3044 /* MapViewController.swift */; };
+		7753BD762521E227007B3044 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7753BD742521E227007B3044 /* MapViewController.xib */; };
 		77D675B6251A28C30085F68A /* CPBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D675B5251A28C30085F68A /* CPBaseController.swift */; };
 		77EBC222251E1E7100B5059B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EBC221251E1E7100B5059B /* SceneDelegate.swift */; };
 		C584EF2720EAADB000D1652C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C584EF2520EAADB000D1652C /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		7703DE0B251E391200E77A89 /* CPbaseDeligates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPbaseDeligates.swift; sourceTree = "<group>"; };
+		7753BD732521E227007B3044 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7753BD742521E227007B3044 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		77D675B5251A28C30085F68A /* CPBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseController.swift; sourceTree = "<group>"; };
 		77EBC221251E1E7100B5059B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C584EF1E20EAADB000D1652C /* CarplayNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarplayNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				77D675B5251A28C30085F68A /* CPBaseController.swift */,
+				7753BD732521E227007B3044 /* MapViewController.swift */,
 			);
 			path = CarPlay;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		C591530D20EBF77800330FD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7753BD742521E227007B3044 /* MapViewController.xib */,
 				C584EF2520EAADB000D1652C /* Main.storyboard */,
 				C584EF2A20EAADB100D1652C /* LaunchScreen.storyboard */,
 				C584EF3920EAB22800D1652C /* CarplayView.xib */,
@@ -187,6 +193,7 @@
 				C584EF2C20EAADB100D1652C /* LaunchScreen.storyboard in Resources */,
 				C584EF2920EAADB100D1652C /* Assets.xcassets in Resources */,
 				C584EF2720EAADB000D1652C /* Main.storyboard in Resources */,
+				7753BD762521E227007B3044 /* MapViewController.xib in Resources */,
 				C584EF3A20EAB22800D1652C /* CarplayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 				C591530F20EBF84D00330FD8 /* CustomNavigationViewController.swift in Sources */,
 				7703DE0C251E391200E77A89 /* CPbaseDeligates.swift in Sources */,
 				77D675B6251A28C30085F68A /* CPBaseController.swift in Sources */,
+				7753BD752521E227007B3044 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
