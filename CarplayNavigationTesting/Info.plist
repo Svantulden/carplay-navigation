@@ -28,6 +28,7 @@
         <true/>
 		<key>UISceneConfigurations</key>
 		<dict>
+            <!-- For device scenes -->
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
@@ -37,6 +38,7 @@
                     <string>Main</string>
 				</dict>
 			</array>
+            <!-- For the main CarPlay scene -->
             <key>CPTemplateApplicationSceneSessionRoleApplication</key>
             <array>
                 <dict>
@@ -48,6 +50,7 @@
                     <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
                 </dict>
             </array>
+            <!-- For the CarPlay Dashboard scene -->
             <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
             <array>
                 <dict>

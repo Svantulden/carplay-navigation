@@ -62,15 +62,15 @@ class CPBaseController: NSObject, CPInterfaceControllerDelegate, CPMapTemplateDe
             }
         
         let bButton = CPDashboardButton(
-            titleVariants: ["Correct"],
-            subtitleVariants: ["Correct emoji"],
+            titleVariants: ["Correct"], subtitleVariants: ["TEST"],
             image:"✅".image() ?? UIImage()) { (button) in
                 print("Button Parks pressed!")
             }
 
         window.rootViewController = mapViewController
         
-        dashboardController.shortcutButtons = [aButton, bButton]
+        dashboardController.shortcutButtons = [aButton,bButton]
+        
     }
 
     func dashboardController(_ dashboardController: CPDashboardController, didDisconnectWith window: UIWindow) {
