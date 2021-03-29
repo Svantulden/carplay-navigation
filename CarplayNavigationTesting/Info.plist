@@ -20,6 +20,50 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+        <key>CPSupportsDashboardNavigationScene</key>
+        <true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+            <!-- For device scenes -->
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+				</dict>
+			</array>
+            <!-- For the main CarPlay scene -->
+            <key>CPTemplateApplicationSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneClassName</key>
+                    <string>CPTemplateApplicationScene</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>TemplateSceneConfiguration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
+                </dict>
+            </array>
+            <!-- For the CarPlay Dashboard scene -->
+            <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneClassName</key>
+                    <string>CPTemplateApplicationDashboardScene</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>DashboardSceneConfiguration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).TemplateApplicationSceneDelegate</string>
+                </dict>
+            </array>
+		</dict>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
